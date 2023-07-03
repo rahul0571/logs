@@ -1,0 +1,80 @@
+ldapuserregistry.xml
+
+A011262Q013:/data/IBM/QA/JazzTeamServer702_SR1/wlp/usr/servers/jazzop # cat ldapUserRegistry.xml
+<server>
+<!--
+    Licensed Materials - Property of IBM
+    (c) Copyright IBM Corporation 2015. All Rights Reserved.
+
+    Note to U.S. Government Users Restricted Rights:
+    Use, duplication or disclosure restricted by GSA ADP Schedule
+    Contract with IBM Corp.
+ -->
+    <featureManager>
+        <feature>ldapRegistry-3.0</feature>
+    </featureManager>
+
+    <!-- Sample LDAP user registry configuration
+     -->
+    <!--ldapRegistry
+        id="BT_AD"
+                host="iaa0001.bt.bombardier.net"
+                port="636"
+                baseDN="DC=BT,DC=bombardier,DC=net"
+                ldapType="Microsoft Active Directory"
+                realm="iaa0001.bt.bombardier.net:636"
+                bindDN="CN=S-M_BTWW-0248,OU=Service Accounts,OU=_admin,OU=M_BTWW,DC=bt,DC=bombardier,DC=net"
+                bindPassword="B0mbardier@123456"
+                ignoreCase="true"
+                recursiveSearch="true"
+                reuseConnection="true"
+                sslEnabled="true"
+                sslRef="LDAPSSLSettings"
+                searchTimeout="120s">
+        <activedFilters
+            userFilter="(&amp;(sAMAccountName=%v)(objectcategory=person))"
+                        groupFilter="(&amp;(cn=%v)(objectcategory=group))"
+                        userIdMap="*:sAMAccountName"
+                        groupIdMap="*:name"
+                        groupMemberIdMap="memberof:member">
+        </activedFilters>
+    </ldapRegistry-->
+ <ldapRegistry
+        id="BT_AD"
+                host="iaa0008.bt.bombardier.net"
+                port="636"
+                baseDN="DC=BT,DC=bombardier,DC=net"
+                ldapType="Microsoft Active Directory"
+                realm="iaa0001.bt.bombardier.net:636"
+                bindDN="CN=S-M_BTWW-0248,OU=Service Accounts,OU=_admin,OU=M_BTWW,DC=bt,DC=bombardier,DC=net"
+                bindPassword="B0mbardier@123456"
+                ignoreCase="true"
+                recursiveSearch="true"
+                reuseConnection="true"
+                sslEnabled="true"
+                sslRef="LDAPSSLSettings"
+                searchTimeout="120s"
+                referal="ignore">
+        <failoverServers name="failoverLdapServersGroup1">
+                <server host="iaa0001.bt.bombardier.net" port="636" />
+                <server host="iaa0003.bt.bombardier.net" port="636" />
+        </failoverServers>
+        <activedFilters
+            userFilter="(&amp;(sAMAccountName=%v)(objectcategory=user))"
+                        groupFilter="(&amp;(cn=%v)(objectcategory=group))"
+                        userIdMap="user:sAMAccountName"
+                        groupIdMap="*:cn"
+                        groupMemberIdMap="memberof:member">
+        </activedFilters>
+    </ldapRegistry>
+
+      <administrator-role>
+           <user>"CN=S-M_BTWW-0248,OU=Service Accounts,OU=_admin,OU=M_BTWW,DC=bt,DC=bombardier,DC=net"</user>
+      </administrator-role>
+
+<ssl id="LDAPSSLSettings" keyStoreRef="LDAPKeyStore" trustStoreRef="LDAPTrustStore" />
+
+<keyStore id="LDAPKeyStore" location="/data/IBM/certs/jazz_auth_qa.keystore"
+          type="JCEKS" password="secret" />
+<keyStore id="LDAPTrustStore" location="/data/IBM/certs/jazz_auth_qa.keystore"
+          type="JCEKS" password="secret" />
