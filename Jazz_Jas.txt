@@ -1,0 +1,360 @@
+https://jazzjts.bt.bombardier.net:9443/jts/admin
+
+
+
+https://jazzjts-qa.bt.bombardier.net:9443/jts/admin
+
+
+
+
+https://alstomgroup-my.sharepoint.com/personal/bala-bhaskar_rokkam-ext_alstomgroup_com/
+
+
+
+bala-bhaskar.rokkam-ext@alstomgroup.com
+
+
+
+a-201048000
+
+
+
+uNxDpkmSsnRHCs%j
+
+A011262Q013:/data/IBM/QA/JazzTeamServer702_SR1/wlp/usr/servers/jazzop/logs # cat console.log
+Launching jazzop (WebSphere Application Server 20.0.0.6/wlp-1.0.41.cl200620200528-0414) on IBM J9 VM, version 8.0.6.15 - pxa6480sr6fp15-20200724_01(SR6 FP15) (en_US)
+[AUDIT   ] CWWKE0001I: The server jazzop has been launched.
+[AUDIT   ] CWWKG0028A: Processing included configuration resource: /data/IBM/QA/JazzTeamServer702_SR1/wlp/usr/servers/jazzop/appConfig.xml
+[AUDIT   ] CWWKG0028A: Processing included configuration resource: /data/IBM/QA/JazzTeamServer702_SR1/wlp/usr/servers/jazzop/ldapUserRegistry.xml
+[AUDIT   ] CWWKG0028A: Processing included configuration resource: /data/IBM/QA/JazzTeamServer702_SR1/wlp/usr/servers/jazzop/localUserRegistry.xml
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://a011262q013.bt.bombardier.net:9080/oidc/
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://a011262q013.bt.bombardier.net:9080/oauth2/
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://a011262q013.bt.bombardier.net:9080/jwt/
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://a011262q013.bt.bombardier.net:9080/jazzop/
+[AUDIT   ] CWWKZ0001I: Application com.ibm.team.integration.jazzop started in 0.604 seconds.
+[ERROR   ] CWWKO0221E: TCP Channel defaultHttpEndpoint initialization did not succeed.  The socket bind did not succeed for host * and port 9080.  The port might already be in use.  Exception Message: Address already in use
+[AUDIT   ] CWWKT0017I: Web application removed (default_host): http://a011262q013.bt.bombardier.net:9080/jazzop/
+[AUDIT   ] CWWKT0017I: Web application removed (default_host): http://a011262q013.bt.bombardier.net:9080/jwt/
+[AUDIT   ] CWWKT0017I: Web application removed (default_host): http://a011262q013.bt.bombardier.net:9080/oidc/
+[AUDIT   ] CWWKT0017I: Web application removed (default_host): http://a011262q013.bt.bombardier.net:9080/oauth2/
+[AUDIT   ] CWWKF0012I: The server installed the following features: [appSecurity-2.0, distributedMap-1.0, federatedRegistry-1.0, jdbc-4.0, jndi-1.0, json-1.0, jsp-2.2, ldapRegistry-3.0, localConnector-1.0, oauth-2.0, openidConnectServer-1.0, servlet-3.0, ssl-1.0].
+[AUDIT   ] CWWKF0011I: The jazzop server is ready to run a smarter planet. The jazzop server started in 2.621 seconds.
+[ERROR   ] CWPKI0823E: SSL HANDSHAKE FAILURE:  A signer with SubjectDN [CN=IAA0008.bt.bombardier.net, OU=0002 389191982, O=ALSTOM TRANSPORT SA, OID.1.2.840.113549.1.9.8=FR] was sent from the host [iaa0008.bt.bombardier.net:636].  The signer might need to be added to local trust store [/data/IBM/certs/jazz_auth_qa.keystore], located in SSL configuration alias [LDAPSSLSettings].  The extended error message from the SSL handshake exception is: [unable to find valid certification path to requested target].
+[ERROR   ] CWPKI0823E: SSL HANDSHAKE FAILURE:  A signer with SubjectDN [CN=IAA0001.bt.bombardier.net, OU=0002 389191982, O=ALSTOM TRANSPORT SA, OID.1.2.840.113549.1.9.8=FR] was sent from the host [iaa0001.bt.bombardier.net:636].  The signer might need to be added to local trust store [/data/IBM/certs/jazz_auth_qa.keystore], located in SSL configuration alias [LDAPSSLSettings].  The extended error message from the SSL handshake exception is: [unable to find valid certification path to requested target].
+[ERROR   ] CWPKI0823E: SSL HANDSHAKE FAILURE:  A signer with SubjectDN [CN=iaa0003.bt.bombardier.net, OU=0002 389191982, O=ALSTOM TRANSPORT SA, OID.1.2.840.113549.1.9.8=FR] was sent from the host [iaa0003.bt.bombardier.net:636].  The signer might need to be added to local trust store [/data/IBM/certs/jazz_auth_qa.keystore], located in SSL configuration alias [LDAPSSLSettings].  The extended error message from the SSL handshake exception is: [unable to find valid certification path to requested target].
+[ERROR   ] CWWKO0221E: TCP Channel defaultHttpEndpoint initialization did not succeed.  The socket bind did not succeed for host * and port 9080.  The port might already be in use.  Exception Message: Address already in use
+[ERROR   ] CWWKO0221E: TCP Channel defaultHttpEndpoint-ssl initialization did not succeed.  The socket bind did not succeed for host * and port 9443.  The port might already be in use.  Exception Message: Address already in use
+
+
+
+
+
+
+
+
+********************************************************************************
+product = WebSphere Application Server 20.0.0.6 (wlp-1.0.41.cl200620200528-0414)
+wlp.install.dir = /data/IBM/QA/JazzTeamServer702_SR1/wlp/
+java.home = /data/IBM/QA/JazzTeamServer702_SR1/java/jre
+java.version = 1.8.0_261
+java.runtime = Java(TM) SE Runtime Environment (8.0.6.15 - pxa6480sr6fp15-20200724_01(SR6 FP15))
+os = Linux (4.12.14-95.117-default; amd64) (en_US)
+process = 14499@10.169.19.227
+********************************************************************************
+[6/26/23 13:50:39:564 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server jazzop has been launched.
+[6/26/23 13:50:39:959 CEST] 0000001e com.ibm.ws.config.xml.internal.XMLConfigParser               A CWWKG0028A: Processing included configuration resource: /data/IBM/QA/JazzTeamServer702_SR1/wlp/usr/servers/jazzop/appConfig.xml
+[6/26/23 13:50:39:966 CEST] 0000001e com.ibm.ws.config.xml.internal.XMLConfigParser               A CWWKG0028A: Processing included configuration resource: /data/IBM/QA/JazzTeamServer702_SR1/wlp/usr/servers/jazzop/ldapUserRegistry.xml
+[6/26/23 13:50:39:969 CEST] 0000001e com.ibm.ws.config.xml.internal.XMLConfigParser               A CWWKG0028A: Processing included configuration resource: /data/IBM/QA/JazzTeamServer702_SR1/wlp/usr/servers/jazzop/localUserRegistry.xml
+[6/26/23 13:50:40:084 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 0.644 seconds
+[6/26/23 13:50:40:113 CEST] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[6/26/23 13:50:40:319 CEST] 0000001d com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: The security service is starting...
+[6/26/23 13:50:40:489 CEST] 00000020 com.ibm.ws.cache.ServerCache                                 I DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[6/26/23 13:50:40:491 CEST] 00000020 com.ibm.ws.cache.ServerCache                                 I DYNA1071I: The cache provider default is being used.
+[6/26/23 13:50:40:491 CEST] 00000020 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[6/26/23 13:50:40:546 CEST] 00000025 com.ibm.ws.ssl.config.WSKeyStore                             I Successfully loaded default keystore: /data/IBM/certs/jazz_auth_qa.keystore of type: JCEKS
+[6/26/23 13:50:40:561 CEST] 0000001d ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated.
+[6/26/23 13:50:40:825 CEST] 00000030 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0008I: The security service is ready.
+[6/26/23 13:50:40:826 CEST] 00000030 com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: LTPA configuration is ready after 0.282 seconds.
+[6/26/23 13:50:40:847 CEST] 0000001d ws.security.oauth20.internal.OAuth20WebAppAuthorizationTable I CWWKS1404I: OAuth roles configuration successfully processed.
+[6/26/23 13:50:40:887 CEST] 0000001d com.ibm.ws.security.oauth20.web.OAuth20EndpointServices      I CWWKS1410I: The OAuth endpoint service is activated.
+[6/26/23 13:50:40:900 CEST] 0000001d com.ibm.ws.security.jwt.internal.ConsumerImpl                I CWWKS6012I: The JSON Web Token (JWT) consumer service is available.
+[6/26/23 13:50:40:908 CEST] 0000001d com.ibm.ws.security.jwt.web.JwtEndpointServices              I CWWKS6002I: The JSON Web Token (JWT) endpoint service is available.
+[6/26/23 13:50:40:920 CEST] 0000001d .security.openidconnect.server.internal.OidcServerConfigImpl I CWWKS1600I: The OpenID Connect provider jazzop configuration has been successfully processed.
+[6/26/23 13:50:40:931 CEST] 0000001d com.ibm.ws.security.openidconnect.web.OidcEndpointServices   I CWWKS1631I: The OpenID Connect endpoint service is activated.
+[6/26/23 13:50:41:133 CEST] 0000001d com.ibm.ws.security.oauth20.internal.LibertyOAuth20Provider  I CWWKS1403I: OAuth provider JazzOP configuration successfully processed.
+[6/26/23 13:50:41:432 CEST] 00000031 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application com.ibm.team.integration.jazzop.
+[6/26/23 13:50:41:434 CEST] 00000031 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0136I: The com.ibm.team.integration.jazzop application is using the archive file at the /data/IBM/QA/JazzTeamServer702_SR1/wlp/usr/servers/jazzop/apps/jazzop.war location.
+[6/26/23 13:50:41:591 CEST] 0000002c com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: OpenID Connect Endpoint Servlet.
+[6/26/23 13:50:41:594 CEST] 00000039 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: com.ibm.oauth.test.war.
+[6/26/23 13:50:41:594 CEST] 0000002c com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module OpenID Connect Endpoint Servlet has been bound to default_host.
+[6/26/23 13:50:41:595 CEST] 00000039 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module com.ibm.oauth.test.war has been bound to default_host.
+[6/26/23 13:50:41:596 CEST] 0000002c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://a011262q013.bt.bombardier.net:9080/oidc/
+[6/26/23 13:50:41:637 CEST] 00000039 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://a011262q013.bt.bombardier.net:9080/oauth2/
+[6/26/23 13:50:41:700 CEST] 00000030 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[6/26/23 13:50:41:705 CEST] 00000037 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/oidc
+[6/26/23 13:50:41:706 CEST] 00000030 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/oauth2
+[6/26/23 13:50:41:712 CEST] 00000037 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[6/26/23 13:50:41:720 CEST] 00000030 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[6/26/23 13:50:41:836 CEST] 00000037 com.ibm.ws.jsp                                               I JSPG8502I: The value of the JSP attribute jdkSourceLevel is "15".
+[6/26/23 13:50:41:838 CEST] 0000003a com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: com.ibm.ws.security.jwt.
+[6/26/23 13:50:41:838 CEST] 0000003a com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module com.ibm.ws.security.jwt has been bound to default_host.
+[6/26/23 13:50:41:838 CEST] 0000003a com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://a011262q013.bt.bombardier.net:9080/jwt/
+[6/26/23 13:50:41:840 CEST] 00000030 com.ibm.ws.jsp                                               I JSPG8502I: The value of the JSP attribute jdkSourceLevel is "15".
+[6/26/23 13:50:41:843 CEST] 00000039 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /data/IBM/QA/JazzTeamServer702_SR1/wlp/usr/servers/jazzop/logs/state/plugin-cfg.xml.
+[6/26/23 13:50:41:871 CEST] 0000002c com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/jwt
+[6/26/23 13:50:41:872 CEST] 0000002c com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[6/26/23 13:50:41:874 CEST] 0000003a com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /data/IBM/QA/JazzTeamServer702_SR1/wlp/usr/servers/jazzop/logs/state/plugin-cfg.xml.
+[6/26/23 13:50:41:875 CEST] 00000037 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[6/26/23 13:50:41:935 CEST] 00000031 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: com.ibm.team.integration.jazzop.
+[6/26/23 13:50:41:935 CEST] 00000031 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module com.ibm.team.integration.jazzop has been bound to default_host.
+[6/26/23 13:50:41:936 CEST] 00000031 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://a011262q013.bt.bombardier.net:9080/jazzop/
+[6/26/23 13:50:41:994 CEST] 00000036 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /data/IBM/QA/JazzTeamServer702_SR1/wlp/usr/servers/jazzop/logs/state/plugin-cfg.xml.
+[6/26/23 13:50:42:013 CEST] 00000031 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/jazzop
+[6/26/23 13:50:42:014 CEST] 00000031 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[6/26/23 13:50:42:036 CEST] 00000031 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application com.ibm.team.integration.jazzop started in 0.604 seconds.
+[6/26/23 13:50:42:050 CEST] 00000029 com.ibm.ws.tcpchannel.internal.TCPPort                       E CWWKO0221E: TCP Channel defaultHttpEndpoint initialization did not succeed.  The socket bind did not succeed for host * and port 9080.  The port might already be in use.  Exception Message: Address already in use
+[6/26/23 13:50:42:052 CEST] 00000029 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host * port 9080.
+[6/26/23 13:50:42:052 CEST] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://a011262q013.bt.bombardier.net:9080/jazzop/
+[6/26/23 13:50:42:052 CEST] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://a011262q013.bt.bombardier.net:9080/jwt/
+[6/26/23 13:50:42:052 CEST] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://a011262q013.bt.bombardier.net:9080/oidc/
+[6/26/23 13:50:42:053 CEST] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://a011262q013.bt.bombardier.net:9080/oauth2/
+[6/26/23 13:50:42:058 CEST] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [appSecurity-2.0, distributedMap-1.0, federatedRegistry-1.0, jdbc-4.0, jndi-1.0, json-1.0, jsp-2.2, ldapRegistry-3.0, localConnector-1.0, oauth-2.0, openidConnectServer-1.0, servlet-3.0, ssl-1.0].
+[6/26/23 13:50:42:060 CEST] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 1.975 seconds.
+[6/26/23 13:50:42:060 CEST] 00000029 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The jazzop server is ready to run a smarter planet. The jazzop server started in 2.621 seconds.
+[6/26/23 13:50:42:733 CEST] 00000025 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "com.ibm.security.cert.IBMCertPathBuilderException: unable to find valid certification path to requested target com.ibm.ws.ssl.core.WSX509TrustManager checkServerTrusted" at ffdc_23.06.26_13.50.42.0.log
+[6/26/23 13:50:42:737 CEST] 00000025 com.ibm.ws.ssl.core.WSX509TrustManager                       E CWPKI0823E: SSL HANDSHAKE FAILURE:  A signer with SubjectDN [CN=IAA0008.bt.bombardier.net, OU=0002 389191982, O=ALSTOM TRANSPORT SA, OID.1.2.840.113549.1.9.8=FR] was sent from the host [iaa0008.bt.bombardier.net:636].  The signer might need to be added to local trust store [/data/IBM/certs/jazz_auth_qa.keystore], located in SSL configuration alias [LDAPSSLSettings].  The extended error message from the SSL handshake exception is: [unable to find valid certification path to requested target].
+[6/26/23 13:50:42:755 CEST] 00000025 com.ibm.ws.ssl.core.WSX509TrustManager                       E CWPKI0823E: SSL HANDSHAKE FAILURE:  A signer with SubjectDN [CN=IAA0001.bt.bombardier.net, OU=0002 389191982, O=ALSTOM TRANSPORT SA, OID.1.2.840.113549.1.9.8=FR] was sent from the host [iaa0001.bt.bombardier.net:636].  The signer might need to be added to local trust store [/data/IBM/certs/jazz_auth_qa.keystore], located in SSL configuration alias [LDAPSSLSettings].  The extended error message from the SSL handshake exception is: [unable to find valid certification path to requested target].
+[6/26/23 13:50:42:786 CEST] 00000025 com.ibm.ws.ssl.core.WSX509TrustManager                       E CWPKI0823E: SSL HANDSHAKE FAILURE:  A signer with SubjectDN [CN=iaa0003.bt.bombardier.net, OU=0002 389191982, O=ALSTOM TRANSPORT SA, OID.1.2.840.113549.1.9.8=FR] was sent from the host [iaa0003.bt.bombardier.net:636].  The signer might need to be added to local trust store [/data/IBM/certs/jazz_auth_qa.keystore], located in SSL configuration alias [LDAPSSLSettings].  The extended error message from the SSL handshake exception is: [unable to find valid certification path to requested target].
+[6/26/23 13:50:42:827 CEST] 00000025 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "javax.naming.CommunicationException: iaa0003.bt.bombardier.net:636 [Root exception is javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: unable to find valid certification path to requested target] com.ibm.ws.security.wim.adapter.ldap.context.ContextManager 406" at ffdc_23.06.26_13.50.42.1.log
+[6/26/23 13:50:42:844 CEST] 00000025 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "javax.naming.CommunicationException: iaa0003.bt.bombardier.net:636 [Root exception is javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: unable to find valid certification path to requested target] com.ibm.ws.security.wim.adapter.ldap.context.ContextManager 1119" at ffdc_23.06.26_13.50.42.2.log
+[6/26/23 13:50:42:850 CEST] 00000025 com.ibm.ws.security.wim.VMMService                           I CWIMK0009I: The user registry federation service is ready.
+[6/26/23 13:50:42:860 CEST] 0000003a com.ibm.ws.tcpchannel.internal.TCPPort                       E CWWKO0221E: TCP Channel defaultHttpEndpoint initialization did not succeed.  The socket bind did not succeed for host * and port 9080.  The port might already be in use.  Exception Message: Address already in use
+[6/26/23 13:50:42:864 CEST] 0000003a com.ibm.ws.tcpchannel.internal.TCPPort                       E CWWKO0221E: TCP Channel defaultHttpEndpoint-ssl initialization did not succeed.  The socket bind did not succeed for host * and port 9443.  The port might already be in use.  Exception Message: Address already in use
+
+
+
+
+A011262Q013:/data/IBM/QA/JazzTeamServer702_SR1/wlp/usr/servers/jazzop # cat ldapUserRegistry.xml
+<server>
+<!--
+    Licensed Materials - Property of IBM
+    (c) Copyright IBM Corporation 2015. All Rights Reserved.
+
+    Note to U.S. Government Users Restricted Rights:
+    Use, duplication or disclosure restricted by GSA ADP Schedule
+    Contract with IBM Corp.
+ -->
+    <featureManager>
+        <feature>ldapRegistry-3.0</feature>
+    </featureManager>
+
+    <!-- Sample LDAP user registry configuration
+     -->
+    <!--ldapRegistry
+        id="BT_AD"
+                host="iaa0001.bt.bombardier.net"
+                port="636"
+                baseDN="DC=BT,DC=bombardier,DC=net"
+                ldapType="Microsoft Active Directory"
+                realm="iaa0001.bt.bombardier.net:636"
+                bindDN="CN=S-M_BTWW-0248,OU=Service Accounts,OU=_admin,OU=M_BTWW,DC=bt,DC=bombardier,DC=net"
+                bindPassword="B0mbardier@123456"
+                ignoreCase="true"
+                recursiveSearch="true"
+                reuseConnection="true"
+                sslEnabled="true"
+                sslRef="LDAPSSLSettings"
+                searchTimeout="120s">
+        <activedFilters
+            userFilter="(&amp;(sAMAccountName=%v)(objectcategory=person))"
+                        groupFilter="(&amp;(cn=%v)(objectcategory=group))"
+                        userIdMap="*:sAMAccountName"
+                        groupIdMap="*:name"
+                        groupMemberIdMap="memberof:member">
+        </activedFilters>
+    </ldapRegistry-->
+ <ldapRegistry
+        id="BT_AD"
+                host="iaa0008.bt.bombardier.net"
+                port="636"
+                baseDN="DC=BT,DC=bombardier,DC=net"
+                ldapType="Microsoft Active Directory"
+                realm="iaa0001.bt.bombardier.net:636"
+                bindDN="CN=S-M_BTWW-0248,OU=Service Accounts,OU=_admin,OU=M_BTWW,DC=bt,DC=bombardier,DC=net"
+                bindPassword="B0mbardier@123456"
+                ignoreCase="true"
+                recursiveSearch="true"
+                reuseConnection="true"
+                sslEnabled="true"
+                sslRef="LDAPSSLSettings"
+                searchTimeout="120s"
+                referal="ignore">
+        <failoverServers name="failoverLdapServersGroup1">
+                <server host="iaa0001.bt.bombardier.net" port="636" />
+                <server host="iaa0003.bt.bombardier.net" port="636" />
+        </failoverServers>
+        <activedFilters
+            userFilter="(&amp;(sAMAccountName=%v)(objectcategory=user))"
+                        groupFilter="(&amp;(cn=%v)(objectcategory=group))"
+                        userIdMap="user:sAMAccountName"
+                        groupIdMap="*:cn"
+                        groupMemberIdMap="memberof:member">
+        </activedFilters>
+    </ldapRegistry>
+
+      <administrator-role>
+           <user>"CN=S-M_BTWW-0248,OU=Service Accounts,OU=_admin,OU=M_BTWW,DC=bt,DC=bombardier,DC=net"</user>
+      </administrator-role>
+
+<ssl id="LDAPSSLSettings" keyStoreRef="LDAPKeyStore" trustStoreRef="LDAPTrustStore" />
+
+<keyStore id="LDAPKeyStore" location="/data/IBM/certs/jazz_auth_qa.keystore"
+          type="JCEKS" password="secret" />
+<keyStore id="LDAPTrustStore" location="/data/IBM/certs/jazz_auth_qa.keystore"
+          type="JCEKS" password="secret" />
+</server>
+A011262Q013:/data/IBM/QA/JazzTeamServer702_SR1/wlp/usr/servers/jazzop #
+
+
+A011262Q013:/etc/ssl # openssl s_client -connect iaa0001.bt.bombardier.net:636 -tls1_2
+CONNECTED(00000003)
+depth=1 C = FR, O = ALSTOM TRANSPORT SA, OU = 0002 389191982, CN = Alstom Infrastructure Certification Authority V1
+verify error:num=20:unable to get local issuer certificate
+---
+Certificate chain
+ 0 s:/unstructuredAddress=FR/O=ALSTOM TRANSPORT SA/OU=0002 389191982/CN=IAA0001.bt.bombardier.net
+   i:/C=FR/O=ALSTOM TRANSPORT SA/OU=0002 389191982/CN=Alstom Infrastructure Certification Authority V1
+ 1 s:/C=FR/O=ALSTOM TRANSPORT SA/OU=0002 389191982/CN=Alstom Infrastructure Certification Authority V1
+   i:/C=FR/O=ALSTOM TRANSPORT SA/OU=0002 389191982/CN=Alstom Root Certification Authority V1
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIGZzCCBE+gAwIBAgIMXhiYILrEsmtIMDPTMA0GCSqGSIb3DQEBCwUAMH8xCzAJ
+BgNVBAYTAkZSMRwwGgYDVQQKDBNBTFNUT00gVFJBTlNQT1JUIFNBMRcwFQYDVQQL
+DA4wMDAyIDM4OTE5MTk4MjE5MDcGA1UEAwwwQWxzdG9tIEluZnJhc3RydWN0dXJl
+IENlcnRpZmljYXRpb24gQXV0aG9yaXR5IFYxMB4XDTIzMDYxNDA0MTYyM1oXDTI1
+MDYxNDA0MTY1M1owbjERMA8GCSqGSIb3DQEJCAwCRlIxHDAaBgNVBAoME0FMU1RP
+TSBUUkFOU1BPUlQgU0ExFzAVBgNVBAsMDjAwMDIgMzg5MTkxOTgyMSIwIAYDVQQD
+DBlJQUEwMDAxLmJ0LmJvbWJhcmRpZXIubmV0MIIBIjANBgkqhkiG9w0BAQEFAAOC
+AQ8AMIIBCgKCAQEAp+F5baC5emx+a7qxptdA7s5UOtrgmsC9iGvxZkUezxwvSSL7
+slEMW4RJdWhrBLis46C0/5UaUFVAKZk0jugd4t06GDZR76T/DNtvx/ayql9QQyKk
+nfrqnPOGss/beQDZ1cYjp+cnFY1QjVEOkI/q5JhbbbUi2Ev5YKhGonfVJ06sXR5E
+SQE2L3uUNWA6iO0fH1AZjXoHDlXojfPHL+0ihJkmVYOeZ6bPNRzF7ho0EmAzaW6m
+AlL33Z9SWMo+EGN9akijFWMXRJHYsCpSh3uDmb3UgOIsks7ThuzOrHIOAH1MlBKp
+5FhgVguL6xn7dhRlBQa5C8ATMTXR+Y65evqmQwIDAQABo4IB8jCCAe4wHQYDVR0O
+BBYEFAqEfkkMOaU2zegorWxDtMpIPuTdMB8GA1UdIwQYMBaAFGSFZFkpbBLTNxXy
+0ycXXuzACQZSMFQGA1UdIARNMEswSQYEVR0gADBBMD8GCCsGAQUFBwIBFjNodHRw
+Oi8vcGtpLmFsc3RvbS5odWIvY3AvY3BfYWxzdG9tX3RyYW5zcG9ydF92MS5wZGYw
+MgYDVR0lBCswKQYIKwYBBQUHAwIGCCsGAQUFBwMBBgorBgEEAYI3FAICBgcrBgEF
+AgMFMA4GA1UdDwEB/wQEAwIFoDBHBgNVHREEQDA+ghlpYWEwMDAxLmJ0LmJvbWJh
+cmRpZXIubmV0gghuZXh0LmxvY4IEbmV4dIIRYnQuYm9tYmFyZGllci5uZXQwRAYD
+VR0fBD0wOzA5oDegNYYzaHR0cDovL3BraS5hbHN0b20uaHViL2NybC9BbHN0b21J
+bmZyYXN0cnVjdHVyZTEuY3JsME4GCCsGAQUFBwEBBEIwQDA+BggrBgEFBQcwAoYy
+aHR0cDovL3BraS5hbHN0b20uaHViL2NhL0Fsc3RvbUluZnJhc3RydWN0dXJlMS5j
+ZXIwMwYJKwYBBAGCNxQCBCYeJABBAFQARABvAG0AYQBpAG4AQwBvAG4AdAByAG8A
+bABsAGUAcjANBgkqhkiG9w0BAQsFAAOCAgEAzWb3nILfbb+o78qGci6EeRjsN1c6
+VhccyMjVLGLRzmgHF3vM6a+T6X1kxBnMoQzCCb1TQLWcb0CCgZlUQZbNqc/1Rvyz
+99BeQfH8P7DLsifFzMpUT8wEnBYHPPQlI2yZmUnJftjDhA/rWxrFIucRQBmep2/C
+GF1rpajv7KevMNXF22ZIrL7q0TB7e0oN6IqFx6T2BWk7Gt+DFgcsOhxHGz+qm1cO
+C7pgewCLTln/xzghzr1iOeVsxdKRJ1esrf5ZLp5fOH40J6GzJ/UjzA45vCwmS7Fm
+l/5Boj3e1j7vgGWThWh+zE0fQO2go8DSu1Aki9fK+qBy4cKsttphbOrWTWNugihn
+m70qOmVGVSA5k1ei3WMIcET/Wfp9rhXjA52a1xnyUFsCzKzBSVOKfEI1/2OL++53
+ZlVMNGlAZ8zfSeON8+IBKetej3whU8Sh2WejwYj/VLQ5k/XmeYJZ2WFSTt2Anvbz
+vq+oIFzavB9i2a1+bPfS1FL78RrMsfDFnywtZaxqJH9cVPrzGHEyaJm/zy/qJYtW
+el4I/fivBcp2mSTIV5ED8cEJTvuaCfwMIxuPSznQ6P71R8nIaPi8/vRmyQAwpJAB
+IUrh0pntMhTN2LKf+iq2b14d8BxHtm6WkExyBgS6vKiv078VUl86BPy/d1oXguIp
+dh7Zp0gnXyJURgY=
+-----END CERTIFICATE-----
+subject=/unstructuredAddress=FR/O=ALSTOM TRANSPORT SA/OU=0002 389191982/CN=IAA0001.bt.bombardier.net
+issuer=/C=FR/O=ALSTOM TRANSPORT SA/OU=0002 389191982/CN=Alstom Infrastructure Certification Authority V1
+---
+Acceptable client certificate CA names
+/unstructuredAddress=FR/O=ALSTOM TRANSPORT SA/OU=0002 389191982/CN=IAA0001.bt.bombardier.net
+/C=DE/O=Bombardier/OU=Bombardier Transportation/CN=BT-IS-Root-CA-2014
+/C=DE/O=Bombardier/OU=Transport/CN=BT IS Root CA 2014
+/C=DE/ST=Berlin/O=BOMBARDIER TRANSPORTATION/CN=BT-IS-CSC-managed-DominoCA-SMIME
+/CN=Alstom Transport MS Root CA V2
+/CN=BT-IS-ROOT-CA-2016v1
+/C=FR/O=ALSTOM TRANSPORT SA/OU=0002 389191982/CN=Alstom Root Certification Authority V1
+/C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root
+/C=US/O=The Go Daddy Group, Inc./OU=Go Daddy Class 2 Certification Authority
+/C=US/ST=New Jersey/L=Jersey City/O=The USERTRUST Network/CN=USERTrust RSA Certification Authority
+/C=IL/O=StartCom Ltd./OU=Secure Digital Certificate Signing/CN=StartCom Certification Authority
+/C=US/O=VeriSign, Inc./OU=VeriSign Trust Network/OU=(c) 2006 VeriSign, Inc. - For authorized use only/CN=VeriSign Class 3 Public Primary Certification Authority - G5
+/O=Entrust.net/OU=www.entrust.net/CPS_2048 incorp. by ref. (limits liab.)/OU=(c) 1999 Entrust.net Limited/CN=Entrust.net Certification Authority (2048)
+/C=US/O=VeriSign, Inc./OU=Class 3 Public Primary Certification Authority
+/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Global Root G3
+/OU=GlobalSign Root CA - R6/O=GlobalSign/CN=GlobalSign
+/C=US/O=thawte, Inc./OU=Certification Services Division/OU=(c) 2006 thawte, Inc. - For authorized use only/CN=thawte Primary Root CA
+/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Certification Authority
+/C=BE/O=GlobalSign nv-sa/OU=Root CA/CN=GlobalSign Root CA
+/C=GB/ST=Greater Manchester/L=Salford/O=Comodo CA Limited/CN=AAA Certificate Services
+/OU=GlobalSign Root CA - R3/O=GlobalSign/CN=GlobalSign
+/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Trusted Root G4
+/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert Assured ID Root CA
+/C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/CN=Microsoft Root Certificate Authority 2010
+/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert High Assurance EV Root CA
+/C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/CN=Microsoft Root Certificate Authority 2011
+/OU=Copyright (c) 1997 Microsoft Corp./OU=Microsoft Corporation/CN=Microsoft Root Authority
+/DC=com/DC=microsoft/CN=Microsoft Root Certificate Authority
+/CN=NT AUTHORITY
+Client Certificate Types: RSA sign, DSA sign, ECDSA sign
+Requested Signature Algorithms: RSA+SHA512:ECDSA+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA1:ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA1:DSA+SHA1
+Shared Requested Signature Algorithms: RSA+SHA512:ECDSA+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA1:ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA1:DSA+SHA1
+Peer signing digest: SHA1
+Server Temp Key: ECDH, P-256, 256 bits
+---
+SSL handshake has read 7173 bytes and written 487 bytes
+---
+New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES256-SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-SHA384
+    Session-ID: F83B0000C4EC4BA26759B6156C0A51FA3A0D7860737648BBCB01B8784B9E1726
+    Session-ID-ctx:
+    Master-Key: 9F7D7EAAD7A4BC235D5575D8E41CA45F88D90DE8B6F2C9F16BB3FD024C7C6DE1470E39FE0FD729309C9A56D0598E0D8B
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1688379547
+    Timeout   : 7200 (sec)
+    Verify return code: 20 (unable to get local issuer certificate)
+---
+^C
+A011262Q013:/etc/ssl # openssl s_client -connect iaa0008.bt.bombardier.net:636 -tls1_2
+CONNECTED(00000003)
+139923504043696:error:1408F10B:SSL routines:SSL3_GET_RECORD:wrong version number:s3_pkt.c:365:
+---
+no peer certificate available
+---
+No client certificate CA names sent
+---
+SSL handshake has read 5 bytes and written 7 bytes
+---
+New, (NONE), Cipher is (NONE)
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : 0000
+    Session-ID:
+    Session-ID-ctx:
+    Master-Key:
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1688379681
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+---
+A011262Q013:/etc/ssl #
+
